@@ -37,24 +37,8 @@
       "description": "Database server type.",
       "value": "pg"
     },
-    "DB_HOST": {
-      "description": "Database host endpoint.",
-      "value": ""
-    },
-    "DB_PORT": {
-      "description": "Database port.",
-      "value": "5432"
-    },
-    "DB_DATABASE": {
-      "description": "Database name.",
-      "value": ""
-    },
-    "DB_USER": {
-      "description": "Database user.",
-      "value": ""
-    },
-    "DB_PASSWORD": {
-      "description": "Database password.",
+    "DATABASE_URL": {
+      "description": "Database url.",
       "value": ""
     },
     "RATE_LIMITER_ENABLED": {
