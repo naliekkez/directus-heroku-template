@@ -39,7 +39,7 @@
     },
     "DB_HOST": {
       "description": "Database host endpoint.",
-      "value": "...com"
+      "value": ""
     },
     "DB_PORT": {
       "description": "Database port.",
@@ -47,15 +47,15 @@
     },
     "DB_DATABASE": {
       "description": "Database name.",
-      "value": "main_..."
+      "value": ""
     },
     "DB_USER": {
       "description": "Database user.",
-      "value": "user_..."
+      "value": ""
     },
     "DB_PASSWORD": {
       "description": "Database password.",
-      "value": "123456"
+      "value": ""
     },
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
