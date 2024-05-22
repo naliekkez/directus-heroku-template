@@ -193,10 +193,7 @@
     },
     {
       "as": "REDIS",
-      "plan": "heroku-redis:hobby-dev",
-      "options": {
-        "version": "7"
-      }
+      "plan": "upstash-redis:free"
     }
   ],
   "buildpacks": [
