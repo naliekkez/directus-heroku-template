@@ -33,6 +33,10 @@
       "description": "Application public URL.",
       "value": "/"
     },
+    "DATABASE_URL": {
+      "description": "Database url",
+      "value": ""
+    },
     "DB_CLIENT": {
       "description": "Database server type.",
       "value": "pg"
