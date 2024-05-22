@@ -37,6 +37,26 @@
       "description": "Database server type.",
       "value": "pg"
     },
+    "DB_HOST": {
+      "description": "Database host endpoint.",
+      "value": "...com"
+    },
+    "DB_PORT": {
+      "description": "Database port.",
+      "value": "5432"
+    },
+    "DB_DATABASE": {
+      "description": "Database name.",
+      "value": "main_..."
+    },
+    "DB_USER": {
+      "description": "Database user.",
+      "value": "user_..."
+    },
+    "DB_PASSWORD": {
+      "description": "Database password.",
+      "value": "123456"
+    },
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
       "value": "true"
@@ -71,7 +91,7 @@
     },
     "STORAGE_LOCATIONS": {
       "description": "The storage key. Please refer to the docs for more information.",
-      "value": "cloud"
+      "value": "s3"
     },
     "STORAGE_CLOUD_DRIVER": {
       "description": "The storage driver.",
@@ -83,7 +103,7 @@
     },
     "STORAGE_CLOUD_PUBLIC_URL": {
       "description": "The storage public URL.",
-      "value": "https://your-bucket.nyc3.digitaloceanspaces.com"
+      "value": "https://<your-bucket-name>.s3.amazonaws.com"
     },
     "STORAGE_CLOUD_KEY": {
       "description": "The storage key id.",
@@ -95,7 +115,7 @@
     },
     "STORAGE_CLOUD_ENDPOINT": {
       "description": "The storage endpoint URL.",
-      "value": "https://nyc3.digitaloceanspaces.com"
+      "value": "https://s3.amazonaws.com"
     },
     "STORAGE_CLOUD_BUCKET": {
       "description": "The storage bucket name.",
@@ -103,7 +123,7 @@
     },
     "STORAGE_CLOUD_REGION": {
       "description": "The storage bucket region.",
-      "value": "nyc3"
+      "value": "eu-central-1"
     },
     "KEY": {
       "description": "The application key.",
@@ -162,7 +182,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free"
+      "size": "basic"
     }
   },
   "image": "heroku/nodejs",
@@ -172,17 +192,10 @@
       "plan": "mailgun:starter"
     },
     {
-      "as": "DATABASE",
-      "plan": "heroku-postgresql:hobby-dev",
-      "options": {
-        "version": "12"
-      }
-    },
-    {
       "as": "REDIS",
       "plan": "heroku-redis:hobby-dev",
       "options": {
-        "version": "6"
+        "version": "7"
       }
     }
   ],
