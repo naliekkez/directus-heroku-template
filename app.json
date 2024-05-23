@@ -33,10 +33,6 @@
       "description": "Application public URL.",
       "value": "/"
     },
-    "DATABASE_URL": {
-      "description": "Database url",
-      "value": ""
-    },
     "DB_CLIENT": {
       "description": "Database server type.",
       "value": "pg"
@@ -45,32 +41,8 @@
       "description": "Whether unauthorized should be rejected or not.",
       "value": "false"
     },
-    "DB_SSL": {
-      "description": "Whether database ssl should be enabled or not.",
-      "value": "true"
-    },
-    "DB_SSL_CA_PATH": {
-      "description": "Whether database ssl should be enabled or not.",
-      "value": "/app/config/amazon-rds-ca-cert.pem"
-    },
-    "DB_HOST": {
-      "description": "Database host endpoint.",
-      "value": ""
-    },
-    "DB_PORT": {
-      "description": "Database port.",
-      "value": "5432"
-    },
-    "DB_DATABASE": {
-      "description": "Database name.",
-      "value": ""
-    },
-    "DB_USER": {
-      "description": "Database user.",
-      "value": ""
-    },
-    "DB_PASSWORD": {
-      "description": "Database password.",
+    "DATABASE_URL": {
+      "description": "Database url",
       "value": ""
     },
     "RATE_LIMITER_ENABLED": {
