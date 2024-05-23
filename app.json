@@ -41,6 +41,10 @@
       "description": "Database server type.",
       "value": "pg"
     },
+    "DB_SSL__REJECT_UNAUTHORIZED": {
+      "description": "Whether unauthorized should be rejected or not.",
+      "value": "false"
+    },
     "DB_SSL": {
       "description": "Whether database ssl should be enabled or not.",
       "value": "true"
