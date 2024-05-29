@@ -45,38 +45,6 @@
       "description": "Database url",
       "value": ""
     },
-    "RATE_LIMITER_ENABLED": {
-      "description": "Whether the rate limiter should be enabled or not.",
-      "value": "true"
-    },
-    "RATE_LIMITER_STORE": {
-      "description": "The rate limiter storage type.",
-      "value": "redis"
-    },
-    "RATE_LIMITER_POINTS": {
-      "description": "Rate limiter points.",
-      "value": "30"
-    },
-    "RATE_LIMITER_DURATION": {
-      "description": "Rate limiter duration in minutes.",
-      "value": "1"
-    },
-    "RATE_LIMITER_KEY_PREFIX": {
-      "description": "The rate limiter key prefixes.",
-      "value": "rate-limitter"
-    },
-    "CACHE_ENABLED": {
-      "description": "Whether the cache should be enabled or not.",
-      "value": "true"
-    },
-    "CACHE_STORE": {
-      "description": "The cache store to use.",
-      "value": "redis"
-    },
-    "CACHE_NAMESPACE": {
-      "description": "The cache namespace.",
-      "value": "cache"
-    },
     "STORAGE_LOCATIONS": {
       "description": "The storage key. Please refer to the docs for more information.",
       "value": "s3"
@@ -178,10 +146,6 @@
     {
       "as": "MAILGUN",
       "plan": "mailgun:starter"
-    },
-    {
-      "as": "REDIS",
-      "plan": "upstash-redis:free"
     }
   ],
   "buildpacks": [
