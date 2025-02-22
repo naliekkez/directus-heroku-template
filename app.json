@@ -113,26 +113,6 @@
     "EXTENSIONS_PATH": {
       "description": "The application's extension folder.",
       "value": "/app/extensions"
-    },
-    "EMAIL_TRANSPORT": {
-      "description": "The email transport.",
-      "value": "smtp"
-    },
-    "EMAIL_SMTP_POOL": {
-      "description": "Whether to setup smtp pooling or not.",
-      "value": "true"
-    },
-    "EMAIL_SMTP_HOST": {
-      "description": "The email server host.",
-      "value": "smtp.mailgun.org"
-    },
-    "EMAIL_SMTP_PORT": {
-      "description": "The email server port.",
-      "value": "587"
-    },
-    "EMAIL_SMTP_SECURE": {
-      "description": "Whether email connection is secure or not.",
-      "value": "false"
     }
   },
   "formation": {
@@ -142,12 +122,6 @@
     }
   },
   "image": "heroku/nodejs",
-  "addons": [
-    {
-      "as": "MAILGUN",
-      "plan": "mailgun:starter"
-    }
-  ],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
