@@ -3,7 +3,7 @@
 # Directus for Heroku
 
 <p align="center">
-    <a href="https://www.heroku.com/deploy/?template=https://github.com/MarchalKobe/directus-heroku-template">
+    <a href="https://www.heroku.com/deploy/?template=https://github.com/naliekkez/directus-heroku-template">
         <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
     </a>
 </p>
